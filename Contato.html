@@ -1,0 +1,100 @@
+<!--Contato-->
+
+<style>
+ /*-----Formulário de Contato---*/
+
+h2{font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: large;}
+        
+   #oferecimento{
+       text-align: center;
+      color: orange;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      font-weight: normal;
+      clear:both;
+	  margin-top:100px;
+    }
+    
+#formcontact{
+background: #f00;}
+
+.contact-form-name, 
+.contact-form-email{
+width: 50%;
+max-width: 50%;
+border-color: #333333;
+color: #000000Y;   
+border-radius: 7px;
+} 
+
+.contact-form-email-message{
+border-radius: 10px;
+width: 60%;
+max-width: 60%;
+border-color: #333333;
+color: #000000Y;
+}
+
+.contact-form-button-submit {
+margin-bottom: 10px;
+}
+
+.contact-form-button-submit {  
+width: 100px;  
+height:30px;    
+font-size: 16px;   
+border-color: #D3D3D3; 
+background: #d14d42;  
+color: #fff;   
+}
+.contact-form-button-submit:hover { 
+border-color: gray;  
+background: red;  
+color: #fff;  
+}
+
+@media (max-width: 600px) {
+   .contact-form-name,.contact-form-email, .contact-form-email-message{
+   width: 95%;
+   max-width:95%;
+       }
+
+    }
+
+</style>
+
+<h2>CONTATO</h2><br/><br/>
+
+<div class="background-contact">
+<form name="contact-form">
+<div style="margin-left: 5px;">
+ Nome </div>
+<input class="contact-form-name" id="ContactForm1_contact-form-name" name="name" size="30" type="text" placeholder="  Seu Nome"  value="" />
+
+<br />
+<hr style="align: center; background: #FFF; border: 0px; height: 1px; width: 100%;" />
+<div style="margin-left: 5px;">
+ email</div>
+<input class="contact-form-email" id="ContactForm1_contact-form-email" name="email" size="30" type="text" placeholder="  exemplo@mail.com"  value="" />
+
+<br />
+<hr style="align: center; background: #FFF; border: 0px; height: 1px; width: 100%;" />
+<div style="margin-left: 5px;">
+ Mensagem</div>
+<textarea class="contact-form-email-message" id="ContactForm1_contact-form-email-message" name="email-message" rows="5" > </textarea>
+<br />
+<br />
+<input class="contact-form-button contact-form-button-submit" id="ContactForm1_contact-form-submit" type="button" value="Enviar" />
+
+<br />
+<div style="text-align: center&quot; max-width: width: 450px;">
+<div class="contact-form-error-message" id="ContactForm1_contact-form-error-message">
+</div>
+<div class="contact-form-success-message" id="ContactForm1_contact-form-success-message">
+</div>
+</div>
+</form>
+</div>
+<div id="oferecimento"><b>Incontáveis seres possam se beneficiar</b></div>

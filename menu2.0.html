@@ -1,0 +1,111 @@
+
+<style>
+/* --------------------------------MENU-------------------------------------------*/
+
+body {margin:0;}
+
+.menu {
+ margin-top:-9px;
+ margin-left:-70px;
+  overflow: hidden;
+  background-color: #d14d42;  
+  position: top;
+  bottom: 0;
+  width: 900px;
+  
+}
+
+.menu a {
+  border-right: 1px #FFF solid;
+  float: left;
+  display: block;
+  color: #FFF !important;
+  text-align: center;
+  padding: 8px 17px;
+  text-decoration: none;
+  font:14px Verdana, Arial, Helvetica, sans-serif; color:#FFF;
+  font-size: 14px ;
+}
+
+.menu a:hover {
+text-decoration: none !important;
+  background-color: red;
+  color: white;
+}
+
+/*.menu a.active {
+  background-color:  #d14d42;
+  color: white;
+}*/
+
+.menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 899px) {
+	
+.menu {
+ margin-top:0;
+ margin-left:0;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 619px) {
+
+
+	.menu a{
+	
+	padding: 12px 17px;
+    border-right: 0px #FFF solid;
+	
+    }
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+	
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 619px) {
+
+	
+  .menu.responsive .icon {
+	
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .menu.responsive a {
+	border-bottom:1px #FFF solid;/*novo*/
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	
+</style>
+<!--MENU-->
+	
+<div class='menu' id='myMenu'>
+  <a class='active' href='https://budismogoias.blogspot.com/p/inicio.html'>Início</a>
+  <a href='https://budismogoias.blogspot.com/p/centros.html'>Centros de Prática</a>
+  <a href='https://budismogoias.blogspot.com/p/praticas.html'>Práticas Regulares</a>
+  <a href='https://budismogoias.blogspot.com/p/formulario-de-contato.html'>Contato</a>
+  <a class='icon' href='javascript:void(0);' onclick='myFunction()' style='font-size:15px;'><b>MENU</b></a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById(&quot;myMenu&quot;);
+  if (x.className === &quot;menu&quot;) {
+    x.className += &quot; responsive&quot;;
+  } else {
+    x.className = &quot;menu&quot;;
+  }
+}
+</script>
+
+
+	<!--FIM MENU-->
